@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/4891213735.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <style>
+        /* Cube palette #770031 #2F2C23 */
+        /* highlight palette #9F0025 #FEEBD6 #2F2C23 */
+        html{
+          font-size: 10px; /* to change the root size from the default 1 rem=16px to 1rem=10px*/
+        }
+        * { 
+          margin: 0; 
+          padding: 0; 
+        }
+        .header{
+          border-top: .6rem solid #143340;
+          border-left: .8rem solid #143340;
+          /* border-right: .6rem solid #183d4d; */
+         }
+        body {
+          /* background-color: #EABBBB; */
+          /* background-color: rgb(235, 228, 228); */
+          /* background-image: linear-gradient(to right, #ffdcad, #ffddbc, #ffe0cc, #ffe4da, #fde9e6, #fde9e5, #fde8e5, #fde8e4, #ffe2d6, #ffdec6, #fddbb5, #f3daa5); */
+          /* background-image: linear-gradient(to right, #ffdcad, #ffddbc, #ffe0cc, #ffe4da, #fde9e6, #fde9e6, #fde9e6, #fde9e6, #ffe4da, #ffe0cc, #ffddbc, #ffdcad); */
+          background-image: linear-gradient(to right, #ffe4c1, #ffe5cc, #ffe6d7, #ffe9e0, #fbece9, #fbece9, #fbece9, #fbece9, #ffe9e0, #ffe6d7, #ffe5cc, #ffe4c1);
+          padding: 0;
+          margin: 0;
+          
+        }
+        h1{
+          font-size: 10rem;
+          margin-top: 8rem;
+          font-family: 'Times New Roman';
+          font-weight: 600;
+        }
+        h3{
+          font-size: 2.2rem;
+          font-family: garamond;
+          color: #e0bb81;
+          margin-left: 0.6%;
+        }
+        h4{
+          font-size: 1.8rem;
+          color: white;
+          /* font-family: garamond; */
+          font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; 
+           font-style: normal; 
+           font-variant: normal; 
+           font-weight: 400; 
+           /* line-height: 2rem; */
+        }
+        h5{
+          font-size: 1.8rem;
+          
+          font-family: garamond;
+          text-align: justify;
+        }
+        h6{
+          font-size: 3rem;
+          font-family: rockwell;
+          
+          margin-left: 0.6%;
+          font-weight: 600;
+        }
+        .part1 h6 {
+          color: peachpuff;
+        }
+        .part2 h6 {
+          color: rgb(14, 59, 85);
+        }
+        .box2 hr {
+          height: 0.2rem;
+          background-color: rgb(0, 0, 0, 0.5);
+          border: 0.1rem solid black;
+        }
+        .box1 h1{
+          text-align: end;
+          color: #223855;
+          /* color: #1e3c63; */
+           /* background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); FF3.6+ */
+          /* margin-bottom: 0; */
+          background-color: #223855;
+                background-image: linear-gradient( -65deg, transparent 0, transparent 5%, rgb(253, 253, 253) 5%, rgb(255, 255, 255) 7%, transparent 10%, transparent 100%);
+                background-size: 200% 100%;
+                animation: animate1 12s linear infinite;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+        }
+        @keyframes animate1 {
+                0%
+                {
+                    background-position: -300%;
+                }
+                100%
+                {
+                    background-position: 500%;
+                }
+              }
+        
+        .box2 h1{
+          color: rgb(235, 228, 228);
+          /* color: white; */
+          /* color: beige; */
+          margin-bottom: 5%;
+        }
+        h1 {
+            animation-name: Fadein;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+            animation-direction: normal;
+        }
+        @keyframes Fadein {
+            0%{
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+        .box2 h4{
+          margin: 2%;
+        }
+        .text1 h4::first-letter  {
+          font-size: 2.5rem;
+        }
+        /* .end h4{
+          font-size: 2rem;
+          margin: 0%;
+          
+        } */
+
+        .header {
+                /* position: relative; */
+                display: flex;
+                background-color: #324A51;
+                width: 100%;
+                min-height: fit-content;
+                padding: 0%;
+                margin: 0%;
+
+            }  
+        .box1 
+        {   
+            width: 45%;
+            /* background-image: linear-gradient(to right bottom, #d6a65a, #dbb16d, #e0bb81, #e5c694, #e9d0a8);  */
+            /* background-image: linear-gradient(to right bottom, #f0b17b, #f2b67b, #f5bb7c, #f6c17c, #f8c67d, #f8cb80, #f9cf83, #f9d487, #fad98e, #fade95, #fbe39d, #fce8a4); */
+            background-image: linear-gradient(to right bottom, #e79a58, #eba561, #efaf6a, #f3ba74, #f7c47e, #f7ca85, #f8d08d, #f8d695, #f6d99b, #f4dca1, #f2dea8, #f0e1ae);
+            /* background-image: linear-gradient(to right bottom, #e79a58, #e8a261, #e8aa6b, #e9b275, #eaba7f, #ecc084, #eec589, #f0cb8f, #f3d190, #f5d692, #f7dc93, #f9e295); */
+            padding: 0;
+            display: block;
+            overflow: hidden;
+        }
+        .box2 {
+        
+                width: 55%; 
+                box-sizing: border-box;
+                /* background-image: linear-gradient(to right top, #2f5d70, #274956, #1f353d, #172326, #0c1011);   */
+                /* background-image: linear-gradient(to right top, #336d86, #2b6077, #245368, #1c475a, #153b4c, #123442, #102c38, #0d252f, #0e2027, #0f1b1f, #0e1618, #0c1011); */
+                background-image: linear-gradient(to right top, #3b5d6b, #325362, #294a58, #21414f, #183846, #14323e, #112b36, #0d252f, #0e2027, #0f1b1f, #0e1618, #0c1011);
+            }
+            
+          .box1_strip{
+
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          display: flex;
+         
+        }
+        .box1_part1 {
+          display: block;
+          width:50%;
+        }
+        .btn.btn-primary1 {
+          margin: 5% 0 0 5%;
+          background-image: linear-gradient(-45deg , #103d54, #103d54, #103d54, #103d54, #103d54, #19374e,#19374e, #1f3147, #222c40, #23212f, #1e1720,#140e12);
+          color:rgb(235, 228, 228);
+          /* background-color: rgb(235, 228, 228);
+          color:#0f3343; */
+          font-size: 2.5rem;
+          font-family: 'Times New Roman';
+          font-weight: 550;
+          border: 0.1rem solid #0d2c3a ;
+          border-radius: 1rem;
+          box-sizing: border-box;
+          box-shadow: 0 0 0.8rem rgb(0, 0, 0, 0.7);
+          text-transform: capitalize;
+        }
+          .btn.btn-primary1:hover{
+            margin: 6% 0 0 6%;
+            transition: 1s;
+            font-size: 2.3rem;
+          } 
+          .btn.btn-primary2 {
+            display: none;
+          }
+        .logo{
+          float:right;
+          margin-top: 3%;
+          margin-right: 3%;
+          width: 11%;
+          /* max-height: ; */
+          
+        }
+        .logo img {
+          width: 100%;
+          border-radius: 5rem;
+        }
+        .logo img:hover {
+              border: 0.2rem solid black;
+              cursor: grab;
+        }
+        .gif1 {
+              width: 100%;
+              float: left;
+              padding-top: 5%;
+              padding-left: 8%;
+              padding-right: 0;
+              margin-top: 0%;
+              margin-bottom: 0%;
+              /* margin-left: 10%; */
+              margin-right: 0;
+              /* margin: 9% 10%; */
+              box-sizing: border-box;
+          }
+        .gif1 img {
+                width: 100%;
+                margin: 0%;
+              }
+        .gif1 img  {
+            animation-name: drive;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+            animation-direction: normal;
+        }
+        .box1_heading{
+          float: right;
+          width: 50%;
+          text-align: right;
+          
+        }
+        @keyframes drive {
+            from{ transform: translateX(70%)}
+            to{ transform: translateX(0%)}
+          }   
+            
+            .fig {
+              width: 70%;
+              float: right;
+              padding: 0%;
+              margin-top: 15%;
+              margin-bottom: 5%;
+              margin-left: 10%;
+              margin-right: 10%;
+              bottom: -5rem;
+              /* margin: 9% 10%; */
+           }
+            
+            .fig img {
+                width: 100%;
+                margin: 0%;
+                
+            }
+            .nav_mobile{
+              display: none;
+            }
+            .share_mob{
+              display: none;
+            }
+            .text1{
+              width: 90%;
+              text-align: justify;
+              padding-left: 1%;
+            }
+            .text1_mob{
+              display: none;
+            }
+            .nav {
+                width: 100%;
+                height: fit-content;
+                /* margin: 0%;
+                padding: 0%; */
+            }
+            .nav ul  {
+                display: inline-flex;
+                justify-content: left;
+                list-style: none;
+                /* color: seashell; */
+                width: 90%;
+                margin: 2% 0%;
+                padding: 0 2%;
+                font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+                /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
+                /* text-decoration: underline; */
+                font-size: 1.8rem;
+
+            }
+            
+            .nav ul li{
+                min-width: 16%;
+                margin: 0.1rem 1%;
+                padding: 1.3% 0;
+                text-align: center;
+                /* background: rgb(0, 0, 0, 0.4); */
+                box-sizing: border-box;
+
+            }
+            .nav ul li a {
+                text-decoration: none;
+                /* color: rgb(168, 161, 148); */
+                color: rgb(185, 170, 141);
+                /* color: bisque; */
+                /* color: rgb(214, 194, 142); */
+                padding: 5% 0;
+            }
+            .active,
+            .nav ul li:hover {
+                background: rgb(0, 0, 0, 0.4);
+                border-radius: 0.3rem;
+            }
+            .nav ul li a:hover {
+                color: burlywood;
+                border-bottom: 1px solid burlywood;
+            }
+
+            .area{
+                margin: 0;
+                padding: 0%;
+                /* background: rgb(235, 228, 228);  */
+                background: rgb(235, 228, 228, 0);
+                width: 100%;   
+                height: 120rem;
+                overflow: hidden;
+                /* min-height: fit-content; */
+            }
+
+            .circles{
+                position: absolute;
+                top: 68rem;
+                /* top: 95%; */
+                /* bottom: 0%; */
+                /* left: 0; */
+                width: 100%;
+                /* height: 110rem; */
+                height: 125rem;
+                overflow: hidden;
+                z-index: -1;
+            }
+            .circles li{
+                position: absolute;
+                display: block;
+                list-style: none;
+                width: 2rem;
+                height: 2rem;
+                /* background-color: rgba(202, 63, 128, 0.4); */
+                /* background: rgba(255, 255, 255, 0.2); */
+                animation: animate 15s linear infinite;
+                bottom: -15rem;
+                
+            }
+
+            .circles li:nth-child(1){
+                left: 13%;
+                width: 8rem;
+                height: 8rem;
+                animation-delay: 1s;
+                background-color: rgb(220, 177, 86);
+            }
+
+
+            .circles li:nth-child(2){
+                left: 10%;
+                width: 2rem;
+                height: 2rem;
+                animation-delay: 2s;
+                animation-duration: 12s;
+                background-color: rgb(244, 233, 91);
+            }
+
+            .circles li:nth-child(3){
+                left: 78%;
+                width: 2rem;
+                height: 2rem;
+                animation-delay: 4s;
+                background-color: rgba(16, 64, 81, 0.6);
+            }
+
+            .circles li:nth-child(4){
+                left: 13%;
+                width: 6rem;
+                height: 6rem;
+                animation-delay: 0s;
+                animation-duration: 18s;
+                background-color: rgb(220, 177, 86);
+            }
+
+            .circles li:nth-child(5){
+                left: 85%;
+                width: 2rem;
+                height: 2rem;
+                animation-delay: 0s;
+                background-color: rgba(38, 120, 150, 0.6);
+            }
+
+            .circles li:nth-child(6){
+                left: 89%;
+                width: 11rem;
+                height: 11rem;
+                animation-delay: 3s;
+                background-color: rgb(56, 153, 158);
+            }
+
+            .circles li:nth-child(7){
+                left: 10%;
+                width: 15rem;
+                height: 15rem;
+                animation-delay: 7s;
+                background-color: rgb(208, 167, 89);
+            }
+
+            .circles li:nth-child(8){
+                left: 21%;
+                width: 6rem;
+                height: 6rem;
+                animation-delay: 10s;
+                animation-duration: 12s;
+                background-color: rgb(237, 203, 112);
+            }
+
+            .circles li:nth-child(9){
+                left: 20%;
+                width: 1.5rem;
+                height: 1.5rem;
+                animation-delay: 2s;
+                animation-duration: 35s;
+                background-color: rgb(255, 215, 69);
+            }
+
+            .circles li:nth-child(10){
+                left: 85%;
+                width: 15rem;
+                height: 15rem;
+                animation-delay: 0s;
+                animation-duration: 11s;
+                background-color: rgba(56, 145, 178, 0.6);
+            }
+            .circles li:nth-child(11){
+                left: 33%;
+                width: 10rem;
+                height: 10rem;
+                animation-delay: 0s;
+                background-color: rgb(218, 186, 117);
+            }
+            .circles li:nth-child(12){
+                left: 63%;
+                width: 8rem;
+                height: 8rem;
+                animation-delay: 2s;
+                background-color: rgb(27, 88, 98);
+            }
+            .circles li:nth-child(13){
+                left: 40%;
+                width: 3rem;
+                height: 3rem;
+                animation-delay: 5s;
+                background-color: rgb(220, 177, 86);
+            }
+            .circles li:nth-child(14){
+                left: 72%;
+                width: 2rem;
+                height: 2rem;
+                animation-delay: 8s;
+                background-color: rgb(10, 43, 54);
+            }
+            .circles li:nth-child(15){
+                left: 78%;
+                width: 3rem;
+                height: 3rem;
+                animation-delay: 3s;
+                background-color: rgb(37, 107, 107);
+            }
+            .circles li:nth-child(16){
+                left: 57%;
+                width: 7rem;
+                height: 7rem;
+                animation-delay: 7s;
+                background-color: rgb(45, 142, 142);
+            }
+            .circles li:nth-child(17){
+                left: 35%;
+                width: 12rem;
+                height: 12rem;
+                animation-delay: 13s;
+                animation-duration: 12s;
+                background-color: rgb(220, 177, 86);
+            }
+
+            @keyframes animate {
+
+                0%{
+                    transform: translateY(0) rotate(0deg);
+                    opacity: 1;
+                    border-radius: 0;
+                }
+
+                100%{
+                    transform: translateY(-120rem) rotate(720deg);
+                    opacity: 0.3;
+                    border-radius: 50%;
+                }
+
+            }
+            
+            .part1, .part2{
+              display: flex;
+              /* flex-wrap: wrap; */
+              margin: 8% auto 7% auto;
+              width: 74%;
+            }
+            .content1{
+              background-image: linear-gradient(to right, #103d54, #103d54, #103d54, #103d54, #103d54, #19374e, #1f3147, #222c40, #23212f, #1e1720, #140e12, #000000);
+              width: 50%;  
+              padding: 2% 3% 2% 3%;
+              margin-right: 2%;
+              box-sizing: border-box;
+              /* display: flex; */
+              box-shadow: 1rem 1rem 5.4rem -0.6rem rgba(0,0,0,0.75);
+              /* justify-content: center; */
+              /* border: 1.6rem solid black; */
+              border-radius: 8rem 0 10rem 0;
+              align-items: center;
+              /* color: rgb(238, 214, 147); */
+              color: peachpuff;
+            }
+            .content4{
+              background-image: linear-gradient(to right bottom, #e79a58, #eba561, #efaf6a, #f3ba74, #f7c47e, #f7ca85, #f8d08d, #f8d695, #f6d99b, #f4dca1, #f2dea8, #f0e1ae);
+              width: 50%;
+              padding: 2% 3% 2% 3%;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              /* border: 1.6rem solid black; */
+              box-shadow: 1rem 1rem 5.4rem -0.6rem rgba(0,0,0,0.75);
+              /* transform: translate(-50%, -50%); */
+              color: rgb(8, 59, 77);
+              display: block;
+              border-radius: 0 8rem 0 10rem ;
+              
+            }
+            .content2{
+              width: 50%;  
+              padding: 4% 3% 2% 3%;
+              box-sizing: border-box;
+              display: flex;
+              box-shadow: 1rem 1rem 5.4rem -0.6rem rgba(0,0,0,0.75);
+              background-image: linear-gradient(to right bottom, #e79a58, #eba561, #efaf6a, #f3ba74, #f7c47e, #f7ca85, #f8d08d, #f8d695, #f6d99b, #f4dca1, #f2dea8, #f0e1ae);
+              /* justify-content: center; */
+              align-items: center;
+              border-radius: 0 8rem 0 10rem ;
+            }
+            .content3{
+              background-image: linear-gradient(to right, #103d54, #103d54, #103d54, #103d54, #103d54, #19374e, #1f3147, #222c40, #23212f, #1e1720, #140e12, #000000);
+              width: 50%;  
+              padding: 4% 3% 2% 3%;
+              box-sizing: border-box;
+              margin-right: 2%;
+              display: flex;
+              box-shadow: 1rem 1rem 5.4rem -0.6rem rgba(0,0,0,0.75);
+              /* justify-content: center; */
+              align-items: center;
+              color: rgb(238, 214, 147);
+              border-radius: 8rem 0 10rem 0;
+            }
+            .part1 hr {
+              border: 0.1rem solid peachpuff;
+            }
+            .part2 hr {
+              border: 0.1rem solid #223855;
+            }
+            #myBtn, #myBtn1 {
+              width: max-content;
+              /* color: #223855; */
+              border: 0.1rem solid #223855;
+              /* background-color: rgb(238, 214, 147); */
+              /* background-color: rgb(245, 213, 171); */
+              font-weight: 700;
+              font-size: 1.5rem;
+              margin: 1% 0 0 0;
+              padding: 0 1% 0 1%;
+            }
+            #myBtn1 {
+              background-color: rgb(245, 213, 171);
+              color: #223855;
+            }
+            #myBtn {
+              float:right;
+              background-color: #223855;
+              color: rgb(245, 213, 171);
+            }
+            .content2 img{
+              width: 100%;
+              border:0.2rem solid  rgb(14, 59, 85);
+              border-radius: 0 8rem 0 10rem ;
+              
+            }
+            .content3 img {
+              width: 100%;
+              border:0.15rem solid  peachpuff;
+              border-radius: 8rem 0 10rem 0;
+            }
+            #more {display: none;}
+            /* .content1 {
+            animation-name: drive;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+            animation-direction: normal;
+        }
+        @keyframes drive {
+            from{ transform: translateX(-30rem)}
+            to{ transform: translateX(0%)}
+          } */
+          /* .content1 
+            {
+            bottom: 15%;
+            position: absolute;
+            -webkit-animation: linear infinite;
+            -webkit-animation-name: run;
+            -webkit-animation-duration: 5s;
+          }
+          @-webkit-keyframes run {
+            0% {
+              left: 0;
+            }
+            50% {
+              left: 100%;
+            }
+            100% {
+              left: 0;    
+            }
+          } */
+          
+          .end h3{
+              font-size: 3.5rem;
+              text-decoration: none;
+              padding: 0 2%;
+              font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+              margin-bottom: 0;
+              color: #294a58;
+              /* margin: 0%; */
+            }
+            .end hr{
+              height: 1.2%;
+              width: 70%;
+              background-color: #294a58;
+              border: 0.5rem solid #294a58;
+              border-radius: 1rem;
+              margin: auto;
+            }
+            .end {
+              width: 100%;
+              background-image: linear-gradient(to bottom, #ef9d4e, #f0a757, #f1b261, #f2bb6c, #f3c577, #f3cb82, #f4d28d, #f5d899, #f5dca6, #f5e0b3, #f5e4c0, #f5e8cd);
+              border-top: 1rem solid #294a58;
+              padding-top: 2%;
+              display:  block;
+              justify-content: center;
+              overflow: hidden;
+            }
+            .endbox {
+              margin: auto;
+              margin-bottom: 0;
+              width: 40%;
+              text-align: center;
+            }
+            .endbox ul{
+              list-style: none;
+
+            }
+            .endbox ul li {
+              margin: 0% 0 0 25%; /*top right bottom left*/
+              width: 100%;
+              text-align: left;
+            }
+            .endbox ul li a{
+              font-family:  cursive;
+              text-decoration: none;
+              font-size: 2.1rem;
+              color:#112b36;
+            }
+            .endbox ul li a:hover {
+              font-size: 2.2rem;
+              background-color: rgba(41, 74,	88, 0.6);
+              color: rgb(235, 228, 228);
+               padding: 0% 1% 0% 1%;
+              /* background-color: rgb(0, 0, 0, 0.2); */
+              /* border: 0.1rem solid rgb(0, 0, 0, 0.4); */
+              transition: 0.2s;
+            }
+            .subsribe {
+              width: 20%;
+              min-height: 6rem;
+              margin: auto;
+              padding: 0rem 3%;
+              background-color: rgb(218, 62, 62);
+              
+              /* background-color: #efaf6a; */
+              font-size: 2.0rem;
+              font-family: rockwell;
+             display: flex;
+             justify-content: center;
+             border-radius: 1.2rem;
+             box-shadow: 0 0 0.8rem rgb(0, 0, 0, 0.7);
+             
+            }
+            .subsribe a {
+              margin: auto;
+              color: #122f3b;
+              text-align: center;
+              text-decoration: none;
+            }
+            .subsribe:hover {
+              /* min-width: 30%; */
+              /* background-color: rgb(184, 73, 73); */
+              background-color: #0e3849;
+              padding: auto;
+              /* min-height: 6rem; */
+              /* padding: 1.5rem; */
+              border-radius: 1.2rem;
+              box-shadow: 0 0 0.8rem rgb(0, 0, 0, 1);
+              transition: 1.5s;
+              letter-spacing: 0.5rem;
+              font-size: 2.3rem;
+              
+            animation-name: press;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+            animation-direction: normal;
+            }
+            .subsribe a:hover {
+              color: white;
+            }
+            @keyframes press {
+            from{ transform: translateY(0%)}
+            to{ transform: translateY(30%)}
+          } 
+          .cloud {
+            width: 50%;
+            margin: 0%;
+            padding: 0%;
+            animation-name: cloudmove;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            animation-direction: normal;
+          }
+          .cloud img {
+            width: 100%;
+          }
+        @keyframes cloudmove {
+            from{ transform: translateX(-200%)}
+            to{ transform: translateX(350%)}
+        }
+        .circlesbox {
+          width: 100%;
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          padding: 0%;
+          margin: 0%;
+        }
+        .circle {
+          position: relative;
+          /* z-index: 2; */
+
+          box-sizing: border-box;
+          border-bottom: 0.5rem solid whitesmoke;   
+          background: transparent;
+          /* box-shadow: 0 0 0 20px #fff; */
+          width:10%;
+          height: 5rem;
+          border-radius:70%;
+          margin: 0;
+          padding: 0;
+        }
+
+
+
+
+
+
+            @media (min-width: 1900px) {
+                html {
+                    font-size: 120%;
+                }
+              }
+            @media (max-width: 998px) {
+                html {
+                    font-size: 55%;
+                }
+              }
+            @media (max-width: 798px) {
+                html {
+                    font-size: 43%;
+                }
+            }
+              @media (max-width: 650px) {
+                html {
+                    /* best for 508px width */
+                    font-size: 38%;
+                }  
+            }
+
+            /* Mobile view */
+
+              @media (max-width: 596px) {
+                html { 
+                    /* best for 508px width */
+                    font-size: 28%;
+                }
+                h1{
+                    font-size: 10.5rem;
+                  }
+                h3{
+                  font-size: 3.5rem;
+                  text-align: center;
+                  }
+                  h6{ 
+                  font-size: 7.0rem;
+                  /* text-align: center; */
+                  }
+                  h5{
+                  font-size: 3.9rem;
+                }
+                /* .box1_strip{
+                  display: block;
+                } */
+                /* .box1_part1 {
+                  display: none;
+                } */
+                .btn.btn-primary1 {
+                  display: none;
+                }
+                .btn.btn-primary2 {
+                  display: block;
+                  margin: 0% auto 5% auto;
+                  background-image: linear-gradient(-45deg , #103d54, #103d54, #103d54, #103d54, #103d54, #19374e,#19374e, #1f3147, #222c40, #23212f, #1e1720,#140e12);
+                  color:rgb(235, 228, 228);
+                  /* background-color: rgb(235, 228, 228);
+                  color:#0f3343; */
+                  font-size: 3rem;
+                  font-family: 'Times New Roman';
+                  font-weight: 550;
+                  border: 0.1rem solid #0d2c3a ;
+                  border-radius: 1rem;
+                  box-sizing: border-box;
+                  box-shadow: 0 0 0.8rem rgb(0, 0, 0, 0.7);
+                  text-transform: capitalize;
+                  
+                }
+                #content .modal.fade.in {
+                  top: 5%;
+                }
+                .gif1{
+                  display: none;
+                  
+                }
+                .box1_heading{
+                  width: 100%;
+                }
+                .logo {
+                  margin-top: 3rem;
+                  margin-right: 6rem;
+                }
+                .logo img{
+                  width: 170%;
+                }
+                .nav_mobile {
+                display: flex;
+                width: 100%;
+                min-height: 60rem;
+                /* justify-content: center; */
+                margin: 0%;
+                padding: 0%;
+                 }
+                 .nav_mobile ul{
+                /* display: block; */
+                /* justify-content: left; */
+                margin: auto;
+                /* margin-bottom: 0; */
+                list-style: none;
+                height: 100%;
+                min-width: 95%;
+                /* text-decoration: underline; */
+                font-size: 3.5rem;
+                padding: 4rem 2%;
+            }
+               .nav_mobile ul li {
+                width: 100%;
+                margin: 0.8rem 0%;
+                padding: 8% 0;
+                text-align: left;
+                /* background: rgb(0, 0, 0, 0.4); */
+                box-sizing: border-box;
+
+            }
+            .nav_mobile ul li a {
+                text-decoration: none;
+                color:#113c49;
+                font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+                
+            }
+            .active,
+            .nav_mobile ul li:hover {
+                background: rgb(0, 0, 0, 0.4);
+                border-radius: 0.3rem;
+            }
+            .nav_mobile ul li a:hover {
+                color: black ;
+                border-bottom: 2px solid black;
+            }
+            .nav{
+                display: none;
+            }
+            .share_mob{
+              display: block;
+            }
+            /* .modal-dialog {
+              position: absolute;
+              top: 0;
+              margin: auto;
+              width: 20rem;
+              min-height: 20rem;
+              z-index: 10;
+            } */
+                .text1 {
+                  display: none;
+                }
+                .text1_mob{
+                  display: block;
+                  width: 96%;
+                  text-align: justify;
+                  padding-left: 1%;
+                }
+                .text1 h4::first-letter  {
+                    font-size: 4.0rem;
+                  }
+                .box2{
+                  width: 100%;
+                }
+                .box2 h4{
+                  font-size: 3.5rem;
+                }
+                .circles, .circles li {
+                  display: none;
+                }
+                .area {
+                  display: block;
+                  height: fit-content;
+                }
+                .part1, .part2{
+                  display: block;
+                  width: 94%;
+                  overflow: hidden;
+                }
+               
+                .content1, .content2, .content3, .content4{
+                  width: 100%;
+                  background: transparent;
+                  box-shadow: none;
+                  color: #000000;
+                } 
+                .content1 h6 {
+                  color: rgb(14, 59, 85);
+                }
+                .content1 hr, .content4 hr {
+                  border: 0.3rem solid rgb(14, 59, 85);
+                }
+                .part1{
+                  margin-top: 8%;
+                }  
+                 .content2, .content4{
+                  margin-top: 8%;
+                }   
+                #myBtn, #myBtn1 {
+                  font-size: 3rem;
+                }
+                #myBtn1 {
+                  float: right;
+                  background-color: rgb(14, 59, 85);
+                  /* background-color: transparent; */
+                  color: peachpuff;
+                }
+                #myBtn2{
+                  /* font-size: 3rem; */
+                  /* float: right; */
+                  background-color: transparent;
+                  border: none;
+                  /* background-color: transparent; */
+                  color: #e0bb81;
+                }
+                .endbox{
+                  width: 50%;
+                }
+                .endbox ul li {
+                  margin: 0 0 0 10%;
+                }
+                .endbox ul li a{
+                    font-size: 2.2rem;
+                }
+              }
+              
+
+            
+
+
+
+
+                
+            /* @media (max-width: 415px) {
+                html {
+                    font-size: 24%;
+                }
+  
+            }
+            @media (max-width: 376px) {
+                html {
+                    font-size: 24%;
+                }
+            } */
+
+
+        </style>
+  </head>
+  <body>
+    
+  
+
+    <section class="header">
+     
+          <div class="box1">
+            
+            <div class="box1_strip">
+
+              <div class="box1_part1">
+
+                  <button type="button" class="btn btn-primary1" data-bs-toggle="modal" data-bs-target="#exampleModal">Share your story</button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Share your story</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                              <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Story Title:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                              </div>
+                              <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Story:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Send message</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="gif1"><img src="bird.gif"></div>
+             </div>
+
+                <div class="box1_heading"><h1>SEC</h1></div>
+                </div>
+
+                <div class="fig"><img src="sad5.png" /></div> 
+                <div class="nav_mobile">
+                    <ul>
+                      <li class="active"><a href="Website.html"><i class="fa-solid fa-house-chimney"></i>&nbsp;Home</a></li>
+                      <li><a href="#"><i class="fa-brands fa-blogger"></i>&nbsp;Stories</a></li>
+                      <li><a href="Quizzo.html"><i class="fa-brands fa-wpforms"></i>&nbsp;Quizzo</a></li>
+                      <!-- <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Write To Us</a></li> -->
+                      <li><a href="About us.html"><i class="fa-solid fa-user-group"></i>&nbsp;About Us</a></li>
+                      <li><a href="#"><i class="fa-solid fa-heart"></i>&nbsp;Support Us</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="share_mob"> -->
+                  <button type="button" class="btn btn-primary2" data-bs-toggle="modal" data-bs-target="#exampleModal">Share your story</button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Share your story</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                              <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Story Title:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                              </div>
+                              <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Story:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Send message</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                <!-- </div> -->
+              
+          </div>
+
+          <div class="box2">
+            <div class="logo">
+              <img src ="logo1.png">
+            </div>
+              <h1>RETA</h1>
+              <div class="nav">
+                <ul>
+                    <li class="active"><a href="#"><i class="fa-solid fa-house-chimney"></i>&nbsp;Home</a></li>
+                    <li><a href="#"><i class="fa-brands fa-blogger"></i>&nbsp;Stories</a></li>
+                    <li><a href="Quizzo.html"><i class="fa-brands fa-wpforms"></i>&nbsp;Quizzo</a></li>
+                    <!-- <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Write to Us</a></li> -->
+                    <li><a href="About us.html"><i class="fa-solid fa-user-group"></i>&nbsp;About Us</a></li>
+                    <li><a href="Support Us.html"><i class="fa-solid fa-heart"></i>&nbsp;Support Us</a></li>
+                </ul>
+              </div>
+              <hr>
+              <div class="text1">
+                <!-- <h4> We are a community which helps people share their expereinces and anguishes by being anonymous.</h4> -->
+                <h3>
+                  <b>"Past with bad memories can never be deleted but  can be diluted" </b>
+                  </h3>
+                  <br>
+                  <h4>
+                  Bonjour fellow internet visitor!! Secreta bids a warm welcome to you. However different and unique an individual of this world is, We all have one thing in common- one dark moment of embarassment or  heartbreak or  shame or  regret or anguish (and the list of superlatives goes on). 
+                  We believe that memories can be diluted, can be masked if shared with the world. This dark moment of our past that still haunts us like a nightmare, topples the domino of our mental peace can be relieved if it is set free. Only way to relieve yourself would be to free this bird that is trapped in your mind, in your soul. Thus, we at secreta request you to free all your memories, that would free yourself, mask off the bad vibe and also give us a teaching that could be implied on our lives. Send us your entries, do it annonymously, free yourself from that haunting secret, that will in a way free yourself from your past.<b> A past that haunts till date.</b> 
+                </h4>
+              </div> 
+
+              <div class="text1_mob">
+                <!-- <h4> We are a community which helps people share their expereinces and anguishes by being anonymous.</h4> -->
+                <h3>
+                  <b>"Past with bad memories can never be deleted but  can be diluted" </b>
+                  </h3>
+                  <br>
+                  <h4>
+                  Bonjour fellow internet visitor!! Secreta bids a warm welcome to you. However different and unique an individual of this world is, We all have one thing in common- one dark moment of embarassment or  heartbreak or  shame or  regret or anguish (and the list of superlatives goes on). 
+                  We believe that memories can be diluted, can be masked if shared with the world. This dark moment of our past that still haunts us like a nightmare, topples the domino of our mental peace can be relieved if it is set free. Only way to relieve yourself would be to free this bird that is trapped in your mind, in your soul.<span id="dots2">...</span><span id="more2" style="display: none;">Thus, we at secreta request you to free all your memories, that would free yourself, mask off the bad vibe and also give us a teaching that could be implied on our lives. Send us your entries, do it annonymously, free yourself from that haunting secret, that will in a way free yourself from your past.<b> A past that haunts till date.</b> </span>
+                
+    
+                <button onclick="myFunction2()" id="myBtn2">Read more</button>
+              </h4>
+                <script>
+                  function myFunction2() {
+                    var dots1 = document.getElementById("dots2");
+                    var moreText = document.getElementById("more2");
+                    var btnText = document.getElementById("myBtn2");
+  
+                    if (dots1.style.display === "none") {
+                      dots1.style.display = "inline";
+                      btnText.innerHTML = "Read more"; 
+                      moreText.style.display = "none";
+                    } else {
+                      dots1.style.display = "none";
+                      btnText.innerHTML = "Read less"; 
+                      moreText.style.display = "inline";
+                    }
+                  }
+              </script>
+              </div> 
+              
+              
+          </div>
+
+    </section>
+    
+    <div class="area" >
+    .
+    <div class="part1">
+            <div class="content1">
+              <h6>Story 1</h6>
+              <hr>
+              <h5>
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. <span id="dots1">...</span><span id="more1" style="display: none;"> Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.</span> 
+              </h5>
+              <button onclick="myFunction1()" id="myBtn1">Read more</button>
+              
+              <script>
+                function myFunction1() {
+                  var dots1 = document.getElementById("dots1");
+                  var moreText = document.getElementById("more1");
+                  var btnText = document.getElementById("myBtn1");
+
+                  if (dots1.style.display === "none") {
+                    dots1.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                  } else {
+                    dots1.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                  }
+                }
+            </script>
+            </div>
+            <div class="content2">
+              <img src="C:\Users\91900\Downloads\Study Materials\child.jpg">
+            </div>
+      </div>
+
+    <div class="part2">
+            <div class="content3">
+              <img src="C:\Users\91900\Downloads\Study Materials\child.jpg">
+            </div>
+            <div class="content4">
+              <h6> Story 2</h6>
+              <hr>
+              <h5>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis.Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.<span id="dots">...</span><span id="more">The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</span>
+              </h5>
+              <button onclick="myFunction()" id="myBtn">Read more</button>
+
+              <script>
+              function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+
+                if (dots.style.display === "none") {
+                  dots.style.display = "inline";
+                  btnText.innerHTML = "Read more"; 
+                  moreText.style.display = "none";
+                } 
+                else {
+                  dots.style.display = "none";
+                  btnText.innerHTML = "Read less"; 
+                  moreText.style.display = "inline";
+                }
+              }
+              </script>
+              <!-- <h5>
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+              </h5> -->
+            </div>
+          </div>
+
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    .
+  </div >
+  
+
+    <Section class="end">
+      
+            <div class="endbox">
+                    <h3><i class="fa-solid fa-ghost"></i>&nbsp;Stalk Us At</h3>
+                    <hr>
+                    <br>
+                    <ul>
+                          <li><a href="https://www.instagram.com/secreta_inc/"><i class="fa-brands fa-instagram-square"></i>&nbsp;Instagram: secreta_inc</a></li>
+                          <li><a href="#"><i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn: Secreta club </a></li>
+                          <li><a href="#"><i class="fa-brands fa-twitter-square"></i>&nbsp;Twitter: Secreta </a></li>
+                          <li><a href="#"><i class="fa-solid fa-envelope-open-text"></i>&nbsp;Email: incsecreta@gmail.com  </a></li>
+                          <br><br><br>
+                        <div class="subsribe">
+                          <a href="#">SUBSCRIBE</a>
+                        </div>  
+                        </ul>
+                        <div class="cloud"><img src="cloud1.png"></div>
+             </div>
+            <div class="circlesbox">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+            <br><br><br><br><br>
+            
+    </Section>
+
+  </body>
+</html>
+            
