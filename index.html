@@ -8,11 +8,15 @@
     <script src="https://kit.fontawesome.com/4891213735.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-      <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+     <style>
         /* Cube palette #770031 #2F2C23 */
         /* highlight palette #9F0025 #FEEBD6 #2F2C23 */
         html{
           font-size: 10px; /* to change the root size from the default 1 rem=16px to 1rem=10px*/
+          scroll-behavior: smooth;
         }
         * { 
           margin: 0; 
@@ -41,29 +45,24 @@
         }
         h3{
           font-size: 2.2rem;
-          font-family: garamond;
+          font-family: garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
           color: #e0bb81;
           margin-left: 0.6%;
         }
         h4{
           font-size: 1.8rem;
           color: white;
-          /* font-family: garamond; */
           font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; 
-           font-style: normal; 
-           font-variant: normal; 
            font-weight: 400; 
-           /* line-height: 2rem; */
         }
         h5{
           font-size: 1.8rem;
-          
-          font-family: garamond;
+          font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; 
           text-align: justify;
         }
         h6{
           font-size: 3rem;
-          font-family: rockwell;
+          font-family: Rockwell, 'Arvo';
           
           margin-left: 0.6%;
           font-weight: 600;
@@ -201,6 +200,33 @@
           .btn.btn-primary2 {
             display: none;
           }
+          .modal-body {
+            background-image: linear-gradient(-45deg , #103d54, #103d54, #103d54, #103d54, #103d54, #19374e,#19374e, #1f3147, #222c40, #23212f, #1e1720,#140e12);
+            font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+            font-size: 2rem;
+            /* color: rgb(213, 183, 128); */
+            color: whitesmoke;
+          }
+          .modal-header, .modal-footer{
+            background-image: linear-gradient(-45deg , #103d54, #103d54, #103d54, #103d54, #103d54, #19374e,#19374e, #1f3147, #222c40, #23212f, #1e1720,#140e12);
+           
+          }
+          .modal-title, .modal-title h5 {
+            font-family: "Times New Roman", serif;
+            color: rgb(208, 167, 89);
+            font-size: 3rem;
+            font-weight: 800;
+            /* color: #0d252f; */
+            text-transform: capitalize;
+          }
+          .form-control{
+            font-size: 1.8rem;
+            background-image: linear-gradient(45deg, #f3ba74, #f7c47e, #f7ca85, #f8d08d, #f8d695, #f6d99b, #f4dca1, #f2dea8, #f0e1ae);
+          }
+          .modal-footer .btn.btn-primary, .modal-footer .btn.btn-secondary {
+            font-size: 2rem;
+            font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+          }
         .logo{
           float:right;
           margin-top: 3%;
@@ -269,6 +295,7 @@
                 margin: 0%;
                 
             }
+
             .nav_mobile{
               display: none;
             }
@@ -297,7 +324,7 @@
                 width: 90%;
                 margin: 2% 0%;
                 padding: 0 2%;
-                font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+                font-family: Rockwell, 'Arvo', "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
                 /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
                 /* text-decoration: underline; */
                 font-size: 1.8rem;
@@ -579,6 +606,9 @@
               color: rgb(238, 214, 147);
               border-radius: 8rem 0 10rem 0;
             }
+            .content2_mob, .content3_mob {
+              display: none;
+            }
             .part1 hr {
               border: 0.1rem solid peachpuff;
             }
@@ -652,7 +682,7 @@
               font-size: 3.5rem;
               text-decoration: none;
               padding: 0 2%;
-              font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+              font-family: Rockwell, 'Arvo', "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
               margin-bottom: 0;
               color: #294a58;
               /* margin: 0%; */
@@ -690,7 +720,7 @@
               text-align: left;
             }
             .endbox ul li a{
-              font-family:  cursive;
+              font-family:  "Comic Sans MS", "Comic Sans", cursive;
               text-decoration: none;
               font-size: 2.1rem;
               color:#112b36;
@@ -713,7 +743,7 @@
               
               /* background-color: #efaf6a; */
               font-size: 2.0rem;
-              font-family: rockwell;
+              font-family: Rockwell, 'Arvo';
              display: flex;
              justify-content: center;
              border-radius: 1.2rem;
@@ -829,11 +859,16 @@
                     font-size: 28%;
                 }
                 h1{
+                   margin-top: 12rem;
                     font-size: 10.5rem;
+                    margin-bottom: 2rem;
                   }
                 h3{
                   font-size: 3.5rem;
                   text-align: center;
+                  }
+                h4{
+                  font-size: 1.2rem;
                   }
                   h6{ 
                   font-size: 7.0rem;
@@ -841,6 +876,7 @@
                   }
                   h5{
                   font-size: 3.9rem;
+                  
                 }
                 /* .box1_strip{
                   display: block;
@@ -853,7 +889,7 @@
                 }
                 .btn.btn-primary2 {
                   display: block;
-                  margin: 0% auto 5% auto;
+                  margin: 0% 2% 5% 2%;
                   background-image: linear-gradient(-45deg , #103d54, #103d54, #103d54, #103d54, #103d54, #19374e,#19374e, #1f3147, #222c40, #23212f, #1e1720,#140e12);
                   color:rgb(235, 228, 228);
                   /* background-color: rgb(235, 228, 228);
@@ -871,6 +907,19 @@
                 #content .modal.fade.in {
                   top: 5%;
                 }
+                .modal-dialog {
+                  margin-top:40%;
+                }
+                .modal-title{
+                  font-size: 3.4rem;
+                }
+                
+                .modal-body {
+                  font-size: 2.8rem;
+                }
+                .form-control{
+                  font-size: 2.6rem;
+                }
                 .gif1{
                   display: none;
                   
@@ -879,7 +928,7 @@
                   width: 100%;
                 }
                 .logo {
-                  margin-top: 3rem;
+                  margin-top: 5rem;
                   margin-right: 6rem;
                 }
                 .logo img{
@@ -890,7 +939,7 @@
                 width: 100%;
                 min-height: 60rem;
                 /* justify-content: center; */
-                margin: 0%;
+                margin: 0 0 0 0;
                 padding: 0%;
                  }
                  .nav_mobile ul{
@@ -902,8 +951,8 @@
                 height: 100%;
                 min-width: 95%;
                 /* text-decoration: underline; */
-                font-size: 3.5rem;
-                padding: 4rem 2%;
+                font-size: 3.0rem;
+                padding: 4rem 1% 4rem 3%;
             }
                .nav_mobile ul li {
                 width: 100%;
@@ -917,7 +966,9 @@
             .nav_mobile ul li a {
                 text-decoration: none;
                 color:#113c49;
-                font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+                font-family:'Arvo', serif;
+                font-weight: 600;
+                
                 
             }
             .active,
@@ -927,13 +978,17 @@
             }
             .nav_mobile ul li a:hover {
                 color: black ;
-                border-bottom: 2px solid black;
+                border-bottom: 0.2rem solid black;
             }
             .nav{
                 display: none;
             }
             .share_mob{
               display: block;
+            }
+            .modal-content {
+              width: 70%;
+              margin: 5% auto;
             }
             /* .modal-dialog {
               position: absolute;
@@ -948,7 +1003,9 @@
                 }
                 .text1_mob{
                   display: block;
+                  /* justify-self: end; */
                   width: 96%;
+                  height: fit-content;
                   text-align: justify;
                   padding-left: 1%;
                 }
@@ -967,28 +1024,67 @@
                 .area {
                   display: block;
                   height: fit-content;
+                  /* padding: 0; */
                 }
                 .part1, .part2{
                   display: block;
                   width: 94%;
-                  overflow: hidden;
+                  /* overflow: hidden; */
                 }
                
                 .content1, .content2, .content3, .content4{
-                  width: 100%;
+                  width: 94%;
                   background: transparent;
+                  border-radius: 0%;
                   box-shadow: none;
                   color: #000000;
+                  margin: 2% auto 0 auto;
                 } 
-                .content1 h6 {
-                  color: rgb(14, 59, 85);
+                .content2, .content3{
+                  display: none;
+                }
+                .content1 h6, .content1 hr,  .content4 h6, .content4 hr  {
+                  display: none;
+                  /* color: rgb(14, 59, 85); */
                 }
                 .content1 hr, .content4 hr {
                   border: 0.3rem solid rgb(14, 59, 85);
                 }
-                .part1{
-                  margin-top: 8%;
+                .content2_mob, .content3_mob {
+                     width: 100%;
+                    display: block;
+                    position: relative;
+                    text-align: left;
+                    
+                    /* font-size: 5rem; */
+                  }
+                  .content2_mob img,  .content3_mob img{
+                    margin: auto;
+                    width: 110%;
+                  }
+                  .content2_mob h6, .content3_mob h6{
+                    color: white;
+                    /* text-decoration: underline; */
+                    font-size: 8rem;
+                  }
+                  .centered1, .centered2 {
+                    width: 30rem;
+                    position: absolute;
+                    /* top: 50%; */
+                    bottom: 0%;
+                    left: 80%;
+                    /* right: 0%; */
+                    transform: translate(-50%, -50%);
+                  }
+                .part1, .part2{
+                  width: 100%;
+                  padding-left: 0;
+                  padding-right: 0;
+                  /* margin: 8% 0 0 0; */
                 }  
+                .area{
+                  margin: 8% 0 5% 0;
+                }
                  .content2, .content4{
                   margin-top: 8%;
                 }   
@@ -1093,7 +1189,7 @@
                 <div class="nav_mobile">
                     <ul>
                       <li class="active"><a href="index.html"><i class="fa-solid fa-house-chimney"></i>&nbsp;Home</a></li>
-                      <li><a href="#"><i class="fa-brands fa-blogger"></i>&nbsp;Stories</a></li>
+                      <li><a href="#area1"><i class="fa-brands fa-blogger"></i>&nbsp;Stories</a></li>
                       <li><a href="Quizzo.html"><i class="fa-brands fa-wpforms"></i>&nbsp;Quizzo</a></li>
                       <!-- <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Write To Us</a></li> -->
                       <li><a href="About us.html"><i class="fa-solid fa-user-group"></i>&nbsp;About Us</a></li>
@@ -1141,7 +1237,7 @@
               <div class="nav">
                 <ul>
                     <li class="active"><a href="#"><i class="fa-solid fa-house-chimney"></i>&nbsp;Home</a></li>
-                    <li><a href="#"><i class="fa-brands fa-blogger"></i>&nbsp;Stories</a></li>
+                    <li><a href="#area1"><i class="fa-brands fa-blogger"></i>&nbsp;Stories</a></li>
                     <li><a href="Quizzo.html"><i class="fa-brands fa-wpforms"></i>&nbsp;Quizzo</a></li>
                     <!-- <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Write to Us</a></li> -->
                     <li><a href="About us.html"><i class="fa-solid fa-user-group"></i>&nbsp;About Us</a></li>
@@ -1162,7 +1258,7 @@
               </div> 
 
               <div class="text1_mob">
-                <!-- <h4> We are a community which helps people share their expereinces and anguishes by being anonymous.</h4> -->
+                
                 <h3>
                   <b>"Past with bad memories can never be deleted but  can be diluted" </b>
                   </h3>
@@ -1173,7 +1269,8 @@
                 
     
                 <button onclick="myFunction2()" id="myBtn2">Read more</button>
-              </h4>
+                  </h4>
+                  
                 <script>
                   function myFunction2() {
                     var dots1 = document.getElementById("dots2");
@@ -1198,9 +1295,15 @@
 
     </section>
     
-    <div class="area" >
+    <div class="area" id="area1" >
     .
     <div class="part1">
+      
+            <div class="content2_mob">
+              <img src="child.jpg">
+              <div class="centered1"><h6>Story 1 <hr></h6></div>
+              &nbsp;
+            </div>
             <div class="content1">
               <h6>Story 1</h6>
               <hr>
@@ -1233,8 +1336,13 @@
       </div>
 
     <div class="part2">
+            <div class="content3_mob">
+              <img src="breakup.jpg">
+              <div class="centered2"><h6>Story 2<hr></h6></div>
+              &nbsp;
+            </div>
             <div class="content3">
-              <img src="child.jpg">
+              <img src="breakup.jpg">
             </div>
             <div class="content4">
               <h6> Story 2</h6>
