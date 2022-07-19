@@ -321,7 +321,7 @@
                 justify-content: left;
                 list-style: none;
                 /* color: seashell; */
-                width: 90%;
+                width: 96%;
                 margin: 2% 0%;
                 padding: 0 2%;
                 font-family: Rockwell, 'Arvo', "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
@@ -334,7 +334,7 @@
             .nav ul li{
                 min-width: 16%;
                 margin: 0.1rem 1%;
-                padding: 1.3% 0;
+                padding: 1.3% 2%;
                 text-align: center;
                 /* background: rgb(0, 0, 0, 0.4); */
                 box-sizing: border-box;
@@ -735,14 +735,16 @@
               transition: 0.2s;
             }
             .subsribe {
-              width: 20%;
+              width: 25%;
+              /* width: fit-content; */
               min-height: 6rem;
               margin: auto;
-              padding: 0rem 3%;
+              padding: 0rem 1%;
               background-color: rgb(218, 62, 62);
               
               /* background-color: #efaf6a; */
               font-size: 2.0rem;
+              /* font-weight: 600; */
               font-family: Rockwell, 'Arvo';
              display: flex;
              justify-content: center;
@@ -868,7 +870,7 @@
                   text-align: center;
                   }
                 h4{
-                  font-size: 1.2rem;
+                  font-size: 3.3rem;
                   }
                   h6{ 
                   font-size: 7.0rem;
@@ -963,6 +965,7 @@
                 box-sizing: border-box;
 
             }
+            
             .nav_mobile ul li a {
                 text-decoration: none;
                 color:#113c49;
@@ -1009,14 +1012,11 @@
                   text-align: justify;
                   padding-left: 1%;
                 }
-                .text1 h4::first-letter  {
+                .text1_mob h4::first-letter  {
                     font-size: 4.0rem;
                   }
                 .box2{
                   width: 100%;
-                }
-                .box2 h4{
-                  font-size: 3.5rem;
                 }
                 .circles, .circles li {
                   display: none;
@@ -1105,6 +1105,9 @@
                   /* background-color: transparent; */
                   color: #e0bb81;
                 }
+                .subsribe{
+                  width: 30%;
+                }
                 .endbox{
                   width: 50%;
                 }
@@ -1113,9 +1116,14 @@
                 }
                 .endbox ul li a{
                     font-size: 2.2rem;
+                    font-family: 'Times New Roman', Times, serif;
                 }
               }
-              
+              @media (max-width: 336px) {
+              .nav_mobile ul li:last-child {
+              font-size: 2.6rem;
+            }
+          }
 
             
 
@@ -1193,7 +1201,7 @@
                       <li><a href="Quizzo.html"><i class="fa-brands fa-wpforms"></i>&nbsp;Quizzo</a></li>
                       <!-- <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Write To Us</a></li> -->
                       <li><a href="About us.html"><i class="fa-solid fa-user-group"></i>&nbsp;About Us</a></li>
-                      <li><a href="#"><i class="fa-solid fa-heart"></i>&nbsp;Support Us</a></li>
+                      <li><a href="#"><i class="fa-solid fa-heart"></i>&nbsp;Hall of Fame</a></li>
                     </ul>
                 </div>
                 <!-- <div class="share_mob"> -->
@@ -1231,7 +1239,7 @@
 
           <div class="box2">
             <div class="logo">
-              <img src ="logo1.png">
+              <a href= "index.html"><img src ="logo1.png"></a>
             </div>
               <h1>RETA</h1>
               <div class="nav">
@@ -1241,7 +1249,7 @@
                     <li><a href="Quizzo.html"><i class="fa-brands fa-wpforms"></i>&nbsp;Quizzo</a></li>
                     <!-- <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Write to Us</a></li> -->
                     <li><a href="About us.html"><i class="fa-solid fa-user-group"></i>&nbsp;About Us</a></li>
-                    <li><a href="Support Us.html"><i class="fa-solid fa-heart"></i>&nbsp;Support Us</a></li>
+                    <li><a href="#"><i class="fa-solid fa-heart"></i>&nbsp;Hall of Fame</a></li>
                 </ul>
               </div>
               <hr>
@@ -1409,7 +1417,7 @@
                           <li><a href="https://www.instagram.com/secreta_inc/"><i class="fa-brands fa-instagram-square"></i>&nbsp;Instagram: secreta_inc</a></li>
                           <li><a href="#"><i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn: Secreta club </a></li>
                           <li><a href="#"><i class="fa-brands fa-twitter-square"></i>&nbsp;Twitter: Secreta </a></li>
-                          <li><a href="#"><i class="fa-solid fa-envelope-open-text"></i>&nbsp;Email: incsecreta@gmail.com  </a></li>
+                          <li><a href="mailto:incsecreta@gmail.com"><i class="fa-solid fa-envelope-open-text"></i>&nbsp;Email: incsecreta@gmail.com  </a></li>
                           <br><br><br>
                         <div class="subsribe">
                           <a href="#">SUBSCRIBE</a>
